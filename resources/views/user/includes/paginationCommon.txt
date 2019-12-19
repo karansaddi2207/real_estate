@@ -1,0 +1,15 @@
+@if($links->lastPage() > 1)
+
+	<ul>
+
+		<li class="{{ ($links->currentPage() == 1) ? 'disables' : '' }}">
+			<a href="{{ $links->url(1) }}">Previous</a>
+		</li>
+
+		<li class="{{ ($links->currentPage() == $links->lastPage()) ? 'disabled' : '' }}">
+			<a href="{{ $links->nextPageUrl() }}">Next</a>
+		</li>
+
+	</ul>
+
+@endif
