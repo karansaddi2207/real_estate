@@ -9,6 +9,7 @@ Route::group(['namespace' => 'Admin'], function(){
 		Route::resource('admin/state', 'StateController');
 		Route::resource('admin/properties', 'PropertiesController');
 		Route::resource('admin/cities', 'CitiesController');
+		Route::resource('admin/users', 'UsersController');
 
 	});
 
